@@ -1,5 +1,6 @@
 import java.util.Scanner;
 import javax.swing.JOptionPane;
+import java.util.Random;
 
 public class app {
    
@@ -62,7 +63,7 @@ public class app {
         //System.out.println(c);
 
 
-        double x;
+       /*  double x;
         double y;
         double z;
 
@@ -77,6 +78,14 @@ public class app {
 
         System.out.println("The hypotenuse is: "+z);
         scanner.close();
+*/
 
+
+        Random random = new Random();
+        
+        //int x = random.nextInt(6)+1;
+        double y = random.nextDouble(6)+1;
+        boolean z = random.nextBoolean();
+        System.out.println(z);
     }
 }
