@@ -80,12 +80,29 @@ public class app {
         scanner.close();
 */
 
-
+/* 
         Random random = new Random();
         
         //int x = random.nextInt(6)+1;
         double y = random.nextDouble(6)+1;
         boolean z = random.nextBoolean();
         System.out.println(z);
+        */
+
+        int age = 12;
+
+        if(age>=75){
+            System.out.println("Boomer!");
+        }
+        else if(age >= 18){
+            System.out.println("You are an adult!");
+        }
+        else if(age>=13){
+
+            System.out.println("You are a teenager");
+        }
+        else{
+            System.out.println("You are not an adult!");
+        }
     }
 }
