@@ -189,7 +189,7 @@ public class app {
        //2d array an array of array
 
 
-
+/* 
        String[][] cars = new String[3][3];
 
        cars[0][0] = "Camaro";
@@ -209,7 +209,21 @@ public class app {
         }
        }
 
+*/
 
+       String name = "David";
+
+       //boolean result = name.equalsIgnoreCase("david");
+       //int result = name.length();
+       //char result = name.charAt(0);
+       //int result = name.indexOf("D");
+       //boolean result = name.isEmpty();
+       //String result = name.toUpperCase();
+       //String result = name.toLowerCase();
+       //String result = name.trim();
+       String result = name.replace('d', 'g');
+
+       System.out.println(result);
 
     }
 }
