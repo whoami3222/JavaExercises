@@ -105,7 +105,7 @@ public class app {
             System.out.println("You are not an adult!");
         }
          */
-
+/* 
          String day = "pizza";
 
          switch(day){
@@ -126,5 +126,16 @@ public class app {
             default: System.out.println(day+" is not a day");
             
          }
+         */
+        Scanner scanner = new Scanner(System.in);
+        String name = "";
+
+        do{
+            System.out.println("Enter your name:  ");
+            name = scanner.nextLine();
+        }while(name.isBlank());
+        
+        scanner.close();
+        System.out.println("Hello "+name);
     }
 }
