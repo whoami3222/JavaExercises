@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import javax.swing.JOptionPane;
 
-public class App {
+public class app {
    
     public static void main(String[] args) {
         
@@ -37,7 +37,7 @@ public class App {
         System.out.println("You like "+food);
     
     */
-
+/* 
         String name = JOptionPane.showInputDialog("Enter your name");
         JOptionPane.showMessageDialog(null, "Hello "+name);
 
@@ -46,5 +46,37 @@ public class App {
 
         double height = Double.parseDouble(JOptionPane.showInputDialog("Enter your height"));
         JOptionPane.showMessageDialog(null, "You are "+height+ " cm tall");
+        */
+
+        //double x = 3.14;
+        //double y = 10;
+
+        //double z = Math.max(x,y);
+        //double c = Math.abs(y);
+        //double c = Math.sqrt(y);
+        //double c = Math.round(x);
+        //double c = Math.floor(x);
+        //double c = Math.ceil(x);
+
+        //System.out.println(z);
+        //System.out.println(c);
+
+
+        double x;
+        double y;
+        double z;
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter side x: ");
+        x = scanner.nextDouble();
+        System.out.println("Enter side y: ");
+        y = scanner.nextDouble();
+
+        z= Math.sqrt((x*x)+(y*y));
+
+        System.out.println("The hypotenuse is: "+z);
+        scanner.close();
+
     }
 }
