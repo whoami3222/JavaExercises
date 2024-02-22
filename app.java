@@ -127,6 +127,7 @@ public class app {
             
          }
          */
+        /* 
         Scanner scanner = new Scanner(System.in);
         String name = "";
 
@@ -134,8 +135,13 @@ public class app {
             System.out.println("Enter your name:  ");
             name = scanner.nextLine();
         }while(name.isBlank());
-        
+
         scanner.close();
         System.out.println("Hello "+name);
+        */
+
+        for(int i = 0; i <= 10; i++){
+            System.out.println(i);
+        }
     }
 }
