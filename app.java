@@ -1,5 +1,7 @@
 import java.util.Scanner;
 import javax.swing.JOptionPane;
+
+import java.util.ArrayList;
 import java.util.Random;
 
 public class app {
@@ -235,7 +237,7 @@ public class app {
        //char      Character
        //int        Integer
        //double     Double
-
+/* 
        Boolean a = true;
        Character b = '@';
        Integer c = 123;
@@ -245,7 +247,24 @@ public class app {
        if(b=='@'){
         System.out.println("This is true");
        }
-       
+       */
 
+
+       //arraylist
+
+       ArrayList<String> food = new ArrayList<String>();
+
+       food.add("pizza");
+       food.add("hamburger");
+       food.add("hotdog");
+
+       food.set(0, "sushi");
+       food.remove(2);
+       food.clear();
+
+
+       for(int i = 0; i<food.size();i++){
+        System.out.println(food.get(i));
+       }
     }
 }
