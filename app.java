@@ -211,7 +211,7 @@ public class app {
 
 */
 
-       String name = "David";
+       //String name = "David";
 
        //boolean result = name.equalsIgnoreCase("david");
        //int result = name.length();
@@ -221,9 +221,31 @@ public class app {
        //String result = name.toUpperCase();
        //String result = name.toLowerCase();
        //String result = name.trim();
-       String result = name.replace('d', 'g');
+       //String result = name.replace('d', 'g');
+       
 
-       System.out.println(result);
+       //System.out.println(result);
+
+
+       //wrapper class
+
+
+       //primitive //wrapper
+       //boolean   Boolean
+       //char      Character
+       //int        Integer
+       //double     Double
+
+       Boolean a = true;
+       Character b = '@';
+       Integer c = 123;
+       Double d = 3.14;
+       String e = "Bro";
+
+       if(b=='@'){
+        System.out.println("This is true");
+       }
+       
 
     }
 }
