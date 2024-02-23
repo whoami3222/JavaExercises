@@ -273,7 +273,7 @@ public class app {
 
        
 
-
+/* 
        ArrayList<String> bakeryList = new ArrayList<>();
        bakeryList.add("pasta");
        bakeryList.add("garlic bread");
@@ -295,7 +295,21 @@ public class app {
        groceryList.add(drinksList);
        
        System.out.println(groceryList.get(0).get(0));
+*/
 
+       //for-each
 
+      // String[] animals = {"cat","dog","rat","bird"};
+
+       ArrayList<String> animals = new ArrayList<String>();
+
+       animals.add("cat");
+       animals.add("dog");
+       animals.add("rat");
+       animals.add("bird");
+
+       for(String i : animals){
+            System.out.println(i);
+       }
     }
 }
