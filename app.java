@@ -1,6 +1,6 @@
 import java.util.Scanner;
 import javax.swing.JOptionPane;
-
+import java.util.*;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -251,7 +251,7 @@ public class app {
 
 
        //arraylist
-
+/* 
        ArrayList<String> food = new ArrayList<String>();
 
        food.add("pizza");
@@ -266,5 +266,36 @@ public class app {
        for(int i = 0; i<food.size();i++){
         System.out.println(food.get(i));
        }
+       System.out.println(food);
+
+       */
+      //2d arraylist
+
+       
+
+
+       ArrayList<String> bakeryList = new ArrayList<>();
+       bakeryList.add("pasta");
+       bakeryList.add("garlic bread");
+       bakeryList.add("donuts");
+
+       ArrayList<String> produceList = new ArrayList<>();
+       produceList.add("tomatoes");
+       produceList.add("zucchini");
+       produceList.add("peppers");
+
+       ArrayList<String> drinksList = new ArrayList<>();
+       drinksList.add("soda");
+       drinksList.add("coffee");
+       
+
+       ArrayList<ArrayList<String>> groceryList = new ArrayList<>();
+       groceryList.add(bakeryList);
+       groceryList.add(produceList);
+       groceryList.add(drinksList);
+       
+       System.out.println(groceryList.get(0).get(0));
+
+
     }
 }
