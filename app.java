@@ -300,7 +300,7 @@ public class app {
        //for-each
 
       // String[] animals = {"cat","dog","rat","bird"};
-
+/* *
        ArrayList<String> animals = new ArrayList<String>();
 
        animals.add("cat");
@@ -311,5 +311,30 @@ public class app {
        for(String i : animals){
             System.out.println(i);
        }
+       */
+
+      // String name = "David";
+      // int age = 21;
+       //hello(name,age);
+
+   // }
+
+
+       //method
+   // static void hello(String name, int age){
+        //System.out.println("Hello "+name+ " you are "+age+" years old");
+
+
+        int x = 3;
+        int y = 4;
+
+    
+        System.out.println(add(x, y));
+
+    }
+    static int add(int x, int y ){
+        int z = x + y;
+        return z;
+
     }
 }
