@@ -396,9 +396,23 @@ public class app {
 
         */
 
-        final double pi = 3.14159;
-        pi = 4;
-        System.out.println(pi);
+       // final double PI = 3.14159;
+      
+        //System.out.println(PI);
 
+
+        //object
+
+       car myCar1 =  new car();
+       car myCar2 =  new car();
+
+       System.out.println(myCar1.model);
+       System.out.println(myCar1.make);
+
+       //myCar.drive();
+       //myCar.brake();
+       System.out.println();
+       System.out.println(myCar2.model);
+       System.out.println(myCar2.make);
     }
 }
