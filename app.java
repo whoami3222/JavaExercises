@@ -336,7 +336,10 @@ public class app {
         int z = x + y;
         return z;
 */
-        int x = add(1, 2,3,4);
+
+//overloaded methods
+/*
+        double x = add(1.0, 2.0,3.0,4.0);
 
     }
     static int add(int a, int b){
@@ -352,5 +355,47 @@ public class app {
         System.out.println("This is overloaded method #3");
 
         return a+b+c+d;
+    }
+    static double add(double a, double b){
+        System.out.println("This is overloaded method #1");
+        return a+b;
+    }
+    static double add(double a, double b,double c ){
+        System.out.println("This is overloaded method #2");
+
+        return a+b+c;
+    }
+    static double add(double a, double b,double c, double d){
+        System.out.println("This is overloaded method #3");
+
+        return a+b+c+d;
+         */
+        //System.out.printf("This is a format string %d", 123);
+
+        boolean myBoolean = true;
+        char myChar = '@';
+        String myString = "Bro";
+        int myInt = 50;
+        double myDouble = -1000;
+
+        //conversion characters
+        System.out.printf("%b\n",myBoolean);
+        System.out.printf("%c\n",myChar);
+        System.out.printf("%s\n",myString);
+        System.out.printf("%d\n",myInt);
+        System.out.printf("%f\n",myDouble);
+
+        //[width]
+        System.out.printf("Hello %10s",myString);
+
+        //[precision]
+        System.out.printf("You have this much money %.2f",myDouble);
+
+        //[flags]
+        System.out.printf("\nYou have this much money %,f",myDouble);
+
+        
+
+
     }
 }
