@@ -371,7 +371,7 @@ public class app {
         return a+b+c+d;
          */
         //System.out.printf("This is a format string %d", 123);
-
+/* 
         boolean myBoolean = true;
         char myChar = '@';
         String myString = "Bro";
@@ -394,8 +394,11 @@ public class app {
         //[flags]
         System.out.printf("\nYou have this much money %,f",myDouble);
 
-        
+        */
 
+        final double pi = 3.14159;
+        pi = 4;
+        System.out.println(pi);
 
     }
 }
