@@ -324,7 +324,7 @@ public class app {
    // static void hello(String name, int age){
         //System.out.println("Hello "+name+ " you are "+age+" years old");
 
-
+/* 
         int x = 3;
         int y = 4;
 
@@ -335,6 +335,22 @@ public class app {
     static int add(int x, int y ){
         int z = x + y;
         return z;
+*/
+        int x = add(1, 2,3,4);
 
+    }
+    static int add(int a, int b){
+        System.out.println("This is overloaded method #1");
+        return a+b;
+    }
+    static int add(int a, int b,int c ){
+        System.out.println("This is overloaded method #2");
+
+        return a+b+c;
+    }
+    static int add(int a, int b,int c, int d){
+        System.out.println("This is overloaded method #3");
+
+        return a+b+c+d;
     }
 }
