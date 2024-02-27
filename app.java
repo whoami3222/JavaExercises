@@ -417,13 +417,15 @@ public class app {
         */
 
         //constructor
-
+/* 
         Human human1 = new Human("Rick", 65, 70);
         Human human2 = new Human("Tom",23 , 90);
 
         System.out.println(human2.age);
         human2.eat();
         human1.drink();
+*/
 
+        DiceRoller diceRoller = new DiceRoller();
     }
 }
