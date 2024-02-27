@@ -441,7 +441,7 @@ public class app {
         System.out.println(pizza.topping);
         */
 
-        Car car = new Car();
+        car car = new car();
         //System.out.println(car.toString());
         System.out.println(car);
     }

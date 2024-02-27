@@ -31,4 +31,8 @@ public class Pizza {
         this.bread = bread;
     }
 
+    Pizza(){
+        
+    }
+
 }
