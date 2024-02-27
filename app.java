@@ -402,7 +402,7 @@ public class app {
 
 
         //object
-
+/*
        car myCar1 =  new car();
        car myCar2 =  new car();
 
@@ -414,5 +414,16 @@ public class app {
        System.out.println();
        System.out.println(myCar2.model);
        System.out.println(myCar2.make);
+        */
+
+        //constructor
+
+        Human human1 = new Human("Rick", 65, 70);
+        Human human2 = new Human("Tom",23 , 90);
+
+        System.out.println(human2.age);
+        human2.eat();
+        human1.drink();
+
     }
 }
