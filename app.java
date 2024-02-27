@@ -430,7 +430,7 @@ public class app {
 
         //overloaded constructors
 
-        
+        /*
 
         Pizza pizza = new Pizza("thicc crust", "tomato");
         
@@ -439,5 +439,10 @@ public class app {
         System.out.println(pizza.sauce);
         System.out.println(pizza.cheese);
         System.out.println(pizza.topping);
+        */
+
+        Car car = new Car();
+        //System.out.println(car.toString());
+        System.out.println(car);
     }
 }
