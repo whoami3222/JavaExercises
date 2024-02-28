@@ -469,7 +469,8 @@ public class app {
         System.out.println(refrigerator[2].name);
 */
 
-
+// object passing
+/*
         Garage garage = new Garage();
 
         car car = new car("BMW");
@@ -477,6 +478,13 @@ public class app {
 
         garage.park(car);
         garage.park(car2);
-        
+        */
+
+        //static = modifier
+        Friend friend1 = new Friend("Spongebob");  
+        Friend friend2 = new Friend("Patrick");   
+        Friend friend3 = new Friend("Squidward"); 
+        Friend friend4 = new Friend("Squidward"); 
+        Friend.displayFriends();  
     }
 }
