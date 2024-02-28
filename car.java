@@ -10,4 +10,10 @@ public class car {
 
         return make + "\n"+model+"\n"+color+"\n"+year;
     }
+
+    String name;
+
+    car(String name){
+        this.name = name;
+    }
 }
