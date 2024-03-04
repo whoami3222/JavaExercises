@@ -509,12 +509,23 @@ public class app {
 */
 
     //method overriding
-        Animal animal = new Animal();
+        /*Animal animal = new Animal();
         Dog dog = new Dog();
 
         dog.speak();
         animal.speak();
-        
+        */
+
+        //super 
+
+        Hero hero1 = new Hero("Batman",42,"$$$");
+        Hero hero2 = new Hero("Superman",33,"everything");
+
+
+
+        System.out.println(hero2.toString());
+        System.out.println(hero1.toString());
+
 
     }
 }
