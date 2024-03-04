@@ -481,10 +481,31 @@ public class app {
         */
 
         //static = modifier
-        Friend friend1 = new Friend("Spongebob");  
-        Friend friend2 = new Friend("Patrick");   
-        Friend friend3 = new Friend("Squidward"); 
-        Friend friend4 = new Friend("Squidward"); 
-        Friend.displayFriends();  
+       // Friend friend1 = new Friend("Spongebob");  
+       // Friend friend2 = new Friend("Patrick");   
+       // Friend friend3 = new Friend("Squidward"); 
+//Friend friend4 = new Friend("Sandy");
+
+       // Friend.displayFriends();  
+
+        
+       // Math.round(a);
+
+       //inheritance
+
+       car car = new car();
+
+       car.go();
+
+       Bicycle bike = new Bicycle();
+
+       bike.stop();
+
+       System.out.println(car.speed);
+       System.out.println(bike.speed);
+
+       System.out.println(car.doors);
+       System.out.println(bike.pedals);
+
     }
 }
