@@ -518,13 +518,18 @@ public class app {
 
         //super 
 
-        Hero hero1 = new Hero("Batman",42,"$$$");
+        /*Hero hero1 = new Hero("Batman",42,"$$$");
         Hero hero2 = new Hero("Superman",33,"everything");
 
 
 
         System.out.println(hero2.toString());
         System.out.println(hero1.toString());
+*/
+        //Vehicle vehicle = new Vehicle();
+        car car = new  car();
+
+        car.go();
 
 
     }
