@@ -1,8 +1,8 @@
 public class car  extends Vehicle{
     
-    String make = "BMW";
-    String model = "F10";
-    int year = 2012;
+    private String make;
+    private String model;
+    private int year;
     String color = "black";
     double price =  12000.00;
     int wheels = 4;
@@ -18,7 +18,37 @@ public class car  extends Vehicle{
     void go(){
         System.out.println("The driver is driving the car");
     }
-    //car(String name){
-     //   this.name = name;
-   // }
+
+
+    car(String make, String model, int year){
+        this.setMake(make);
+        this.setModel(model);
+        this.setYear(year);
+      
+   }
+
+   public String getMake(){
+        return make;
+
+   }
+
+   public String getModel(){
+        return model;
+   }
+
+   public int getYear(){
+        return year;
+   }
+
+   public void setMake(String make){
+        this.make = make;
+   }
+
+    public void setModel(String model){
+        this.model = model;
+    }
+
+    public void setYear(int year){
+        this.year = year;
+    }
 }

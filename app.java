@@ -527,9 +527,15 @@ public class app {
         System.out.println(hero1.toString());
 */
         //Vehicle vehicle = new Vehicle();
-        car car = new  car();
+        car car = new  car("BMW","f30",2008);
+        
+        System.out.println(car.getMake());
 
         car.go();
+
+        car.setYear(2022);
+
+        System.out.println(car.getYear());
 
 
     }
