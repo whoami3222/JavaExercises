@@ -492,7 +492,7 @@ public class app {
        // Math.round(a);
 
        //inheritance
-
+/* 
        car car = new car();
 
        car.go();
@@ -506,6 +506,15 @@ public class app {
 
        System.out.println(car.doors);
        System.out.println(bike.pedals);
+*/
+
+    //method overriding
+        Animal animal = new Animal();
+        Dog dog = new Dog();
+
+        dog.speak();
+        animal.speak();
+        
 
     }
 }
