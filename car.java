@@ -7,10 +7,10 @@ public class car  extends Vehicle{
     double price =  12000.00;
     int wheels = 4;
     int doors = 4;
-    public String toString(){
+    //public String toString(){
 
-        return make + "\n"+model+"\n"+color+"\n"+year;
-    }
+     //   return make + "\n"+model+"\n"+color+"\n"+year;
+   // }
 
     String name;
 
@@ -25,6 +25,9 @@ public class car  extends Vehicle{
         this.setModel(model);
         this.setYear(year);
       
+   }
+   car(car x){
+        this.copy(x);
    }
 
    public String getMake(){
@@ -50,5 +53,12 @@ public class car  extends Vehicle{
 
     public void setYear(int year){
         this.year = year;
+    }
+
+    public void copy(car x){
+        this.setMake(x.getMake());
+        this.setModel(x.getModel());
+        this.setYear(x.getYear());
+
     }
 }

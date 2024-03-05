@@ -527,7 +527,7 @@ public class app {
         System.out.println(hero1.toString());
 */
         //Vehicle vehicle = new Vehicle();
-        car car = new  car("BMW","f30",2008);
+        /*car car = new  car("BMW","f30",2008);
         
         System.out.println(car.getMake());
 
@@ -536,6 +536,25 @@ public class app {
         car.setYear(2022);
 
         System.out.println(car.getYear());
+*/
+
+        car car1 = new car("BMW", "f30", 2012);
+        //car car2 = new car("Mercedes", "C300", 2015);
+        
+       // car2.copy(car1);
+
+       car car2 = new car(car1);
+
+        System.out.println(car1);
+        System.out.println(car2);
+        System.out.println();
+        System.out.println(car1.getMake());
+        System.out.println(car1.getModel());
+        System.out.println(car1.getYear());
+        System.out.println();
+        System.out.println(car2.getMake());
+        System.out.println(car2.getModel());
+        System.out.println(car2.getYear());
 
 
     }
