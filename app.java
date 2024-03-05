@@ -537,8 +537,8 @@ public class app {
 
         System.out.println(car.getYear());
 */
-
-        car car1 = new car("BMW", "f30", 2012);
+        //copy objects
+        /*car car1 = new car("BMW", "f30", 2012);
         //car car2 = new car("Mercedes", "C300", 2015);
         
        // car2.copy(car1);
@@ -555,7 +555,17 @@ public class app {
         System.out.println(car2.getMake());
         System.out.println(car2.getModel());
         System.out.println(car2.getYear());
+*/
 
+        //interface
+        Rabbit rabbit = new Rabbit();
+        rabbit.flee();
 
+        Hawk  hawk = new Hawk();
+        hawk.hunt();
+
+        Fish fish = new Fish();
+        fish.hunt();
+        fish.flee();
     }
 }
