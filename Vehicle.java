@@ -1,8 +1,8 @@
-public abstract class Vehicle {
+public class Vehicle {
 
     double speed;
 
-    abstract void go(); 
+ 
 
    // void go(){
    //     System.out.println("This vehicle is moving");
@@ -10,6 +10,12 @@ public abstract class Vehicle {
 
     void stop(){
         System.out.println("This vehicle is stopped");
+    }
+
+
+
+    public void go() {
+      
     }
 
 }

@@ -557,8 +557,8 @@ public class app {
         System.out.println(car2.getYear());
 */
 
-        //interface
-        Rabbit rabbit = new Rabbit();
+        //interface = a template than can be applied to a class
+        /*Rabbit rabbit = new Rabbit();
         rabbit.flee();
 
         Hawk  hawk = new Hawk();
@@ -567,5 +567,21 @@ public class app {
         Fish fish = new Fish();
         fish.hunt();
         fish.flee();
+        */
+
+        //polymorphism
+
+        Car1 car = new Car1();
+        Bicycle bicycle = new Bicycle();
+        Boat boat = new Boat();
+
+        Object[] racers = {car,bicycle,boat};
+
+        for(Vehicle x: racers){
+            x.go();
+
+        }
+
+        
     }
 }
