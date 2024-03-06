@@ -4,6 +4,8 @@ import java.util.*;
 import java.util.ArrayList;
 import java.util.Random;
 import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 
 public class app {
    
@@ -631,15 +633,27 @@ public class app {
     
 // 
 
-        File file = new File("secret_message.txt");
+        // File file = new File("secret_message.txt");
 
-        if (file.exists()) {
-            System.out.println("That file exists :O! ");
-            System.out.println(file.getPath());
-            System.out.println(file.getAbsolutePath());
-            System.out.println(file.isFile());
-        }else{
-            System.out.println("That file doesn't exist");
-        }
+        // if (file.exists()) {
+        //     System.out.println("That file exists :O! ");
+        //     System.out.println(file.getPath());
+        //     System.out.println(file.getAbsolutePath());
+        //     System.out.println(file.isFile());
+        // }else{
+        //     System.out.println("That file doesn't exist");
+        // }
+
+
+    try {
+        FileWriter writer = new FileWriter("poem.txt");
+        writer.write("Roses are red\nViolets are blue\nMy name is Dude");
+        writer.append("\n(A poem by Me)");
+        writer.close();
+    }
+     catch (IOException e) {
+        // TODO Auto-generated catch block
+        e.printStackTrace();
+    }
 }
 }
