@@ -582,25 +582,51 @@ public class app {
 
         // }
         
+        // Scanner scanner = new Scanner(System.in);
+        // Animal animal;
+
+        // System.out.println("What animal do you want?:");
+        // System.out.print("(1=Dog) or (2=Cat):");
+        // int choice = scanner.nextInt();
+
+        // if(choice==1){
+        //     animal = new Dog();
+        //     animal.speak();
+        // }else if(choice==2){
+        //     animal = new Cat();
+        //     animal.speak();
+        // }else{
+        //     animal= new Animal();
+        //     System.out.println("That choice was invalid");
+        //     animal.speak();
+        // }
         Scanner scanner = new Scanner(System.in);
-        Animal animal;
+        try {
+            
 
-        System.out.println("What animal do you want?:");
-        System.out.print("(1=Dog) or (2=Cat):");
-        int choice = scanner.nextInt();
+            System.out.println("Enter a whole number to divide: ");
+            int x = scanner.nextInt();
 
-        if(choice==1){
-            animal = new Dog();
-            animal.speak();
-        }else if(choice==2){
-            animal = new Cat();
-            animal.speak();
-        }else{
-            animal= new Animal();
-            System.out.println("That choice was invalid");
-            animal.speak();
-        }
+            System.out.println("Enter a whole number to divide by: ");
+            int y = scanner.nextInt();
 
-        
+            int z = x/y;
+            System.out.println("Result: "+z);
     }
+
+    catch(ArithmeticException e){
+        System.out.println("You can't divide by 0!!");
+    }
+    catch(InputMismatchException e){
+        System.out.println("PLEASE ENTER A NUMBER!!");
+    }
+    catch(Exception e){
+        System.out.println("Something went wrong!");
+    }
+    finally{
+        System.out.println("This will always print");
+        scanner.close();
+    }
+    
+}
 }
