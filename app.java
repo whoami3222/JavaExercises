@@ -3,6 +3,7 @@ import javax.swing.JOptionPane;
 import java.util.*;
 import java.util.ArrayList;
 import java.util.Random;
+import java.io.File;
 
 public class app {
    
@@ -600,33 +601,45 @@ public class app {
         //     System.out.println("That choice was invalid");
         //     animal.speak();
         // }
-        Scanner scanner = new Scanner(System.in);
-        try {
+    //     Scanner scanner = new Scanner(System.in);
+    //     try {
             
 
-            System.out.println("Enter a whole number to divide: ");
-            int x = scanner.nextInt();
+    //         System.out.println("Enter a whole number to divide: ");
+    //         int x = scanner.nextInt();
 
-            System.out.println("Enter a whole number to divide by: ");
-            int y = scanner.nextInt();
+    //         System.out.println("Enter a whole number to divide by: ");
+    //         int y = scanner.nextInt();
 
-            int z = x/y;
-            System.out.println("Result: "+z);
-    }
+    //         int z = x/y;
+    //         System.out.println("Result: "+z);
+    // }
 
-    catch(ArithmeticException e){
-        System.out.println("You can't divide by 0!!");
-    }
-    catch(InputMismatchException e){
-        System.out.println("PLEASE ENTER A NUMBER!!");
-    }
-    catch(Exception e){
-        System.out.println("Something went wrong!");
-    }
-    finally{
-        System.out.println("This will always print");
-        scanner.close();
-    }
+    // catch(ArithmeticException e){
+    //     System.out.println("You can't divide by 0!!");
+    // }
+    // catch(InputMismatchException e){
+    //     System.out.println("PLEASE ENTER A NUMBER!!");
+    // }
+    // catch(Exception e){
+    //     System.out.println("Something went wrong!");
+    // }
+    // finally{
+    //     System.out.println("This will always print");
+    //     scanner.close();
+    // }
     
+// 
+
+        File file = new File("secret_message.txt");
+
+        if (file.exists()) {
+            System.out.println("That file exists :O! ");
+            System.out.println(file.getPath());
+            System.out.println(file.getAbsolutePath());
+            System.out.println(file.isFile());
+        }else{
+            System.out.println("That file doesn't exist");
+        }
 }
 }
