@@ -1,6 +1,11 @@
 import java.util.Scanner;
 
 import javax.annotation.processing.FilerException;
+import javax.sound.sampled.AudioInputStream;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
+import javax.sound.sampled.LineUnavailableException;
+import javax.sound.sampled.UnsupportedAudioFileException;
 import javax.swing.JOptionPane;
 import java.util.*;
 import java.util.ArrayList;
@@ -13,7 +18,7 @@ import java.io.IOException;
 
 public class app {
    
-    public static void main(String[] args) {
+    public static void main(String[] args) throws UnsupportedAudioFileException, IOException, LineUnavailableException {
         
         /* 
         System.out.println("\tI love pizza");
@@ -660,24 +665,57 @@ public class app {
     //     e.printStackTrace();
     // }
 
-    try {
-        FileReader reader = new FileReader("art.txt");
-        int data = reader.read();
-        while(data != -1) {
-            System.out.print((char)data);
-            data = reader.read();
+    //  READER
+    // try {
+    //     FileReader reader = new FileReader("art.txt");
+    //     int data = reader.read();
+    //     while(data != -1) {
+    //         System.out.print((char)data);
+    //         data = reader.read();
 
-        }
-        reader.close();
+    //     }
+    //     reader.close();
 
         
-    } catch (FileNotFoundException e) {
-        // TODO Auto-generated catch block
-        e.printStackTrace();
-    } catch (IOException e) {
-        // TODO Auto-generated catch block
-        e.printStackTrace();
-    }
+    // } catch (FileNotFoundException e) {
+    //     // TODO Auto-generated catch block
+    //     e.printStackTrace();
+    // } catch (IOException e) {
+    //     // TODO Auto-generated catch block
+    //     e.printStackTrace();
+    // }
+    Scanner scanner = new Scanner(System.in);
+
+    File file = new File("Putting On The Ritz - Freedom Trail Studio.wav");
+    AudioInputStream audioStream = AudioSystem.getAudioInputStream(file);
+    Clip clip = AudioSystem.getClip();
+    clip.open(audioStream);
+
     
+    String response = "";
+
+    while (!response.equals("Q")) {
+        System.out.println("P = play, S = stop, R = reset, Q = quit");
+        System.out.println("Enter your choice: ");
+
+        response = scanner.next();
+        response = response.toUpperCase();
+        
+        switch (response) {
+            case ("P"): clip.start();
+                break;
+            case ("S"): clip.stop();
+                break;
+            case ("R"): clip.setMicrosecondPosition(0);
+                break;
+            case ("Q"): clip.close();
+                break;
+            default:
+                System.out.println("Not a valid response");
+        }
+    }
+    System.out.println("BYEE");
+
+   
 }
 }
