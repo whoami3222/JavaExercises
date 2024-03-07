@@ -1,15 +1,19 @@
 import java.util.Scanner;
 
 import javax.annotation.processing.FilerException;
+import javax.imageio.ImageIO;
 import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
 import javax.sound.sampled.LineUnavailableException;
 import javax.sound.sampled.UnsupportedAudioFileException;
+import javax.swing.ImageIcon;
+import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import java.util.*;
 import java.util.ArrayList;
 import java.util.Random;
+import java.awt.Color;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -684,38 +688,53 @@ public class app {
     //     // TODO Auto-generated catch block
     //     e.printStackTrace();
     // }
-    Scanner scanner = new Scanner(System.in);
+    // Scanner scanner = new Scanner(System.in);
 
-    File file = new File("Putting On The Ritz - Freedom Trail Studio.wav");
-    AudioInputStream audioStream = AudioSystem.getAudioInputStream(file);
-    Clip clip = AudioSystem.getClip();
-    clip.open(audioStream);
+    // File file = new File("Putting On The Ritz - Freedom Trail Studio.wav");
+    // AudioInputStream audioStream = AudioSystem.getAudioInputStream(file);
+    // Clip clip = AudioSystem.getClip();
+    // clip.open(audioStream);
 
     
-    String response = "";
+    // String response = "";
 
-    while (!response.equals("Q")) {
-        System.out.println("P = play, S = stop, R = reset, Q = quit");
-        System.out.println("Enter your choice: ");
+    // while (!response.equals("Q")) {
+    //     System.out.println("P = play, S = stop, R = reset, Q = quit");
+    //     System.out.println("Enter your choice: ");
 
-        response = scanner.next();
-        response = response.toUpperCase();
+    //     response = scanner.next();
+    //     response = response.toUpperCase();
         
-        switch (response) {
-            case ("P"): clip.start();
-                break;
-            case ("S"): clip.stop();
-                break;
-            case ("R"): clip.setMicrosecondPosition(0);
-                break;
-            case ("Q"): clip.close();
-                break;
-            default:
-                System.out.println("Not a valid response");
-        }
-    }
-    System.out.println("BYEE");
+    //     switch (response) {
+    //         case ("P"): clip.start();
+    //             break;
+    //         case ("S"): clip.stop();
+    //             break;
+    //         case ("R"): clip.setMicrosecondPosition(0);
+    //             break;
+    //         case ("Q"): clip.close();
+    //             break;
+    //         default:
+    //             System.out.println("Not a valid response");
+    //     }
+    // }
+    // System.out.println("BYEE");
 
-   
+   //JFrame
+
+    // JFrame frame = new JFrame();//creates an instance of a frame
+    // frame.setTitle("JFrame"); //sets title of frame
+    // frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //exit ouf of application(normally hides on close)
+    // frame.setResizable(false);//prevent frame from being resized
+    // frame.setSize(420,420);//sets x dimension and y dimension of our frame
+    // frame.setVisible(true); //make frame visible
+
+    // ImageIcon image = new ImageIcon("bmw.jpg"); //create an image icon
+
+    // frame.setIconImage(image.getImage());//change icon of frame
+    // frame.getContentPane().setBackground(new Color(255,173,173)); //change color of background
+    
+
+    new MyFrame();
 }
 }
