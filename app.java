@@ -7,13 +7,18 @@ import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
 import javax.sound.sampled.LineUnavailableException;
 import javax.sound.sampled.UnsupportedAudioFileException;
+import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JOptionPane;
+import javax.swing.border.Border;
+
 import java.util.*;
 import java.util.ArrayList;
 import java.util.Random;
 import java.awt.Color;
+import java.awt.Font;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -735,6 +740,34 @@ public class app {
     // frame.getContentPane().setBackground(new Color(255,173,173)); //change color of background
     
 
-    new MyFrame();
+    //new MyFrame();
+
+    //JLabel
+    
+    ImageIcon image = new ImageIcon("bmw.jpg");
+    Border border = BorderFactory.createLineBorder(Color.green,3);
+    
+    JLabel jLabel = new JLabel(); // create a label
+    jLabel.setText("Bro do you even code?");//set text of label
+    jLabel.setIcon(image);
+    jLabel.setHorizontalTextPosition(JLabel.CENTER);//set text LEFT,CENTER or RIGHT of imageicon
+    jLabel.setVerticalTextPosition(JLabel.TOP);
+    jLabel.setForeground(new Color(250));
+    jLabel.setFont(new Font("MV Boli",Font.PLAIN,20));
+    jLabel.setIconTextGap(0);
+    jLabel.setBackground(Color.green);
+    jLabel.setOpaque(true);
+    jLabel.setBorder(border);
+    jLabel.setVerticalAlignment(JLabel.CENTER);
+    jLabel.setHorizontalAlignment(JLabel.CENTER);
+    //jLabel.setBounds(100,0,900,600);
+
+    JFrame frame = new JFrame();//creates an instance of a frame
+    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //exit ouf of application(normally hides on close)
+    //frame.setSize(1100,600);//sets x dimension and y dimension of our frame
+    frame.setVisible(true); //make frame visible
+    frame.add(jLabel);
+    //frame.setLayout(null);
+    frame.pack();
 }
 }
