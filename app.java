@@ -774,35 +774,40 @@ public class app {
 
     //JPanel
 
-    ImageIcon icon = new ImageIcon("bmw.jpg");
+    // ImageIcon icon = new ImageIcon("bmw.jpg");
 
-    JLabel label = new JLabel();
-    label.setText("Hi");
-    label.setIcon(icon);
+    // JLabel label = new JLabel();
+    // label.setText("Hi");
+    // label.setIcon(icon);
+    
 
-    JPanel redPanel = new JPanel();
-    redPanel.setBackground(Color.red);
-    redPanel.setBounds(0,0,250,250);
+    // JPanel redPanel = new JPanel();
+    // redPanel.setBackground(Color.red);
+    // redPanel.setBounds(0,0,250,250);
 
-    JPanel bluePanel = new JPanel();
-    bluePanel.setBackground(Color.blue);
-    bluePanel.setBounds(250,0,250,250);
+    // JPanel bluePanel = new JPanel();
+    // bluePanel.setBackground(Color.blue);
+    // bluePanel.setBounds(250,0,250,250);
 
-    JPanel greenPanel = new JPanel();
-    greenPanel.setBackground(Color.green);
-    greenPanel.setBounds(0,250,500,250);
+    // JPanel greenPanel = new JPanel();
+    // greenPanel.setBackground(Color.green);
+    // greenPanel.setBounds(0,250,500,250);
 
-    JFrame frame = new JFrame();//creates an instance of a frame
-    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //exit ouf of application(normally hides on close)
-    frame.setSize(1100,600);//sets x dimension and y dimension of our frame
-    frame.setVisible(true); //make frame visible
-    frame.setLayout(null);
-    greenPanel.add(label);
-    frame.add(redPanel);
-    frame.add(bluePanel);
-    frame.add(greenPanel);
+    // JFrame frame = new JFrame();//creates an instance of a frame
+    // frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //exit ouf of application(normally hides on close)
+    // frame.setSize(1100,600);//sets x dimension and y dimension of our frame
+    // frame.setVisible(true); //make frame visible
+    // frame.setLayout(null);
+    // greenPanel.add(label);
+    // frame.add(redPanel);
+    // frame.add(bluePanel);
+    // frame.add(greenPanel);
     //frame.pack();
 
+
+    //JButton
+
+    new MiFrame();
     
 
 }
