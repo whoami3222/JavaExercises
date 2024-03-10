@@ -12,6 +12,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
+import javax.swing.JPanel;
 import javax.swing.border.Border;
 
 import java.util.*;
@@ -744,30 +745,65 @@ public class app {
 
     //JLabel
     
-    ImageIcon image = new ImageIcon("bmw.jpg");
-    Border border = BorderFactory.createLineBorder(Color.green,3);
+    // ImageIcon image = new ImageIcon("bmw.jpg");
+    // Border border = BorderFactory.createLineBorder(Color.green,3);
     
-    JLabel jLabel = new JLabel(); // create a label
-    jLabel.setText("Bro do you even code?");//set text of label
-    jLabel.setIcon(image);
-    jLabel.setHorizontalTextPosition(JLabel.CENTER);//set text LEFT,CENTER or RIGHT of imageicon
-    jLabel.setVerticalTextPosition(JLabel.TOP);
-    jLabel.setForeground(new Color(250));
-    jLabel.setFont(new Font("MV Boli",Font.PLAIN,20));
-    jLabel.setIconTextGap(0);
-    jLabel.setBackground(Color.green);
-    jLabel.setOpaque(true);
-    jLabel.setBorder(border);
-    jLabel.setVerticalAlignment(JLabel.CENTER);
-    jLabel.setHorizontalAlignment(JLabel.CENTER);
-    //jLabel.setBounds(100,0,900,600);
+    // JLabel jLabel = new JLabel(); // create a label
+    // jLabel.setText("Bro do you even code?");//set text of label
+    // jLabel.setIcon(image);
+    // jLabel.setHorizontalTextPosition(JLabel.CENTER);//set text LEFT,CENTER or RIGHT of imageicon
+    // jLabel.setVerticalTextPosition(JLabel.TOP);
+    // jLabel.setForeground(new Color(250));
+    // jLabel.setFont(new Font("MV Boli",Font.PLAIN,20));
+    // jLabel.setIconTextGap(0);
+    // jLabel.setBackground(Color.green);
+    // jLabel.setOpaque(true);
+    // jLabel.setBorder(border);
+    // jLabel.setVerticalAlignment(JLabel.CENTER);
+    // jLabel.setHorizontalAlignment(JLabel.CENTER);
+    // //jLabel.setBounds(100,0,900,600);
+
+    // JFrame frame = new JFrame();//creates an instance of a frame
+    // frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //exit ouf of application(normally hides on close)
+    // //frame.setSize(1100,600);//sets x dimension and y dimension of our frame
+    // frame.setVisible(true); //make frame visible
+    // frame.add(jLabel);
+    // //frame.setLayout(null);
+    // frame.pack();
+
+
+    //JPanel
+
+    ImageIcon icon = new ImageIcon("bmw.jpg");
+
+    JLabel label = new JLabel();
+    label.setText("Hi");
+    label.setIcon(icon);
+
+    JPanel redPanel = new JPanel();
+    redPanel.setBackground(Color.red);
+    redPanel.setBounds(0,0,250,250);
+
+    JPanel bluePanel = new JPanel();
+    bluePanel.setBackground(Color.blue);
+    bluePanel.setBounds(250,0,250,250);
+
+    JPanel greenPanel = new JPanel();
+    greenPanel.setBackground(Color.green);
+    greenPanel.setBounds(0,250,500,250);
 
     JFrame frame = new JFrame();//creates an instance of a frame
     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //exit ouf of application(normally hides on close)
-    //frame.setSize(1100,600);//sets x dimension and y dimension of our frame
+    frame.setSize(1100,600);//sets x dimension and y dimension of our frame
     frame.setVisible(true); //make frame visible
-    frame.add(jLabel);
-    //frame.setLayout(null);
-    frame.pack();
+    frame.setLayout(null);
+    greenPanel.add(label);
+    frame.add(redPanel);
+    frame.add(bluePanel);
+    frame.add(greenPanel);
+    //frame.pack();
+
+    
+
 }
 }
