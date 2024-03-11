@@ -888,10 +888,12 @@ public class app {
 // public static <T> void draw(T x){
 //     x.draw();
 
-    MyIntegerClass myInt = new MyIntegerClass(1);
-    MyDoubleClass myDouble = new MyDoubleClass(3.14);
-    MyCharacterClass myCharacter = new MyCharacterClass('@');
-    MyStringClass myString = new MyStringClass("Hello");
+    MyGenericClass <Integer, Integer> myInt = new MyGenericClass<>(1,9);
+    MyGenericClass <Double, Double> myDouble = new MyGenericClass<>(3.14,1.01);
+    MyGenericClass <Character, Character> myCharacter = new MyGenericClass<>('@','$');
+    MyGenericClass <String, Character> myString = new MyGenericClass<>("Hello",'!');
+
+    ArrayList<String> myFriends = new ArrayList<>();
 
     System.out.println(myInt.getValue());
     System.out.println(myDouble.getValue());
