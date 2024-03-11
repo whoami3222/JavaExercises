@@ -814,35 +814,35 @@ public class app {
     //BorderLayout
     
 
-    Integer[] intArray = {1,2,3,4,5};
-    Double[] doubleArray = {5.5,4.4,3.3,2.2,1.1};
-    Character[] charArray = {'H','E','L','L','O'};
-    String[] stringArray = {"B","Y","E"};
+    // Integer[] intArray = {1,2,3,4,5};
+    // Double[] doubleArray = {5.5,4.4,3.3,2.2,1.1};
+    // Character[] charArray = {'H','E','L','L','O'};
+    // String[] stringArray = {"B","Y","E"};
 
     // displayArray(intArray);
     // displayArray(stringArray);
     // displayArray(charArray);
     // displayArray(doubleArray);
 
-    System.out.println(getFirst(intArray));
-    System.out.println(getFirst(doubleArray));
-    System.out.println(getFirst(charArray));
-    System.out.println(getFirst(stringArray));
+//     System.out.println(getFirst(intArray));
+//     System.out.println(getFirst(doubleArray));
+//     System.out.println(getFirst(charArray));
+//     System.out.println(getFirst(stringArray));
     
 
-}
-public static <Thing> void displayArray(Thing[] array) {
+// }
+// public static <Thing> void displayArray(Thing[] array) {
     
 
-    for(Thing x: array){
-        System.out.println(x+" ");
-    }
-    System.out.println();
-}
+//     for(Thing x: array){
+//         System.out.println(x+" ");
+//     }
+//     System.out.println();
+// }
 
-public static <T> T getFirst(T[] array){
-    return array[0];
-}
+// public static <T> T getFirst(T[] array){
+//     return array[0];
+// }
 
 // public static void displayArray(Double[] array) {
     
@@ -870,4 +870,32 @@ public static <T> T getFirst(T[] array){
 //     }
 //     System.out.println();
 // }
+
+//     Player player = new Player();
+//     Enemy enemy = new Enemy();
+//     Item item = new Item();
+//     Tree tree = new Tree();
+
+
+//     draw(player);
+//     draw(enemy);
+//     draw(item);
+//     draw(tree);
+
+
+// }
+
+// public static <T> void draw(T x){
+//     x.draw();
+
+    MyIntegerClass myInt = new MyIntegerClass(1);
+    MyDoubleClass myDouble = new MyDoubleClass(3.14);
+    MyCharacterClass myCharacter = new MyCharacterClass('@');
+    MyStringClass myString = new MyStringClass("Hello");
+
+    System.out.println(myInt.getValue());
+    System.out.println(myDouble.getValue());
+    System.out.println(myCharacter.getValue());
+    System.out.println(myString.getValue());
+}
 }
